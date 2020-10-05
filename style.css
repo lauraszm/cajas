@@ -2,19 +2,20 @@
   padding: 0px;
   margin: 0px; }
 
-.box {
-  width: 300px;
-  height: 300px;
+.cajas {
+  width: 400px;
+  height: 400px;
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  display: inline-flex; }
-
-.box1 {
-  background-color: red; }
-
-.box2 {
-  background-color: blue; }
+  display: flex;
+  flex-direction: row; }
+  .cajas .box1 {
+    background-color: red;
+    border: 1px solid black; }
+  .cajas .box2 {
+    background-color: blue;
+    border: 1px solid black; }
 
 @media screen and (max-width: 800px) {
   .box {
