@@ -3,32 +3,28 @@
     margin: 0px;
 }
 
-@mixin boxsize {
+@mixin box {
     width: 400px;
     height: 400px;
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    border: 1px solid black;
 }
 
 
 .cajas {
-    @include boxsize;
     display: flex;
     flex-direction: row;
 
     .box1 {
+        @include box;
         background-color: red;
-        border: 1px solid black;
-
-    
     }
     
     .box2 {
+        @include box;
         background-color: blue;
-        border: 1px solid black;
-
-    
     }
 }
 
@@ -36,7 +32,7 @@
 
     @media screen and (max-width: 800px) {
     
-        .box {
+        .cajas {
             display: flex;
             flex-direction: column;
         }
